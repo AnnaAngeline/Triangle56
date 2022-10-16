@@ -12,7 +12,7 @@ jobs:
       - run: 
           command: |
             pip install pytest
-            pytest --junitxml=test-results/junit.xml Assignment567.py
+            pytest --junitxml=test-results/junit.xml .pytest_cache/Assignment567
       - store_test_results:
           path: test-results
 workflows:
