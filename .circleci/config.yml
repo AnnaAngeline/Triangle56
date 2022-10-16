@@ -12,7 +12,7 @@ jobs:
       - run: 
           command: |
             pip install pytest
-            pytest --junitxml=test-results/junit.xml .pytest_cache/Assignment567
+            pytest --junitxml=test-results/junit.xml jetbrains://pycharm/navigate/reference?project=pythonProject&path=.pytest_cache/Assignment567
       - store_test_results:
           path: test-results
 workflows:
