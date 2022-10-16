@@ -1,0 +1,21 @@
+import unittest
+
+from triangle import classify
+
+
+class TestTriangles(unittest.TestCase):
+
+    def testEquilateralTriangleA(self):
+        self.assertEqual(classify(5, 5, 5), 'Equilateral', '5,5,5 is a Right triangle')
+
+    def testIsocelesTriangleB(self):
+        self.assertEqual(classify(4, 6, 6), 'Isoceles', '4,6,6 is a Isoceles triangle')
+
+    def testScaleneTriangleC(self):
+        self.assertEqual(classify(4, 6, 9), 'Scalene', '4,6,9 is a Scalene triangle')
+
+
+
+
+if __name__ == "__main__":
+    unittest.main()
